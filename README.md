@@ -1,3 +1,5 @@
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/likvido/Likvido.Configurations/Publish%20to%20nuget)](https://github.com/Likvido/Likvido.Configurations/actions?query=workflow%3A%22Publish+to+nuget%22)
+[![Nuget](https://img.shields.io/nuget/v/Likvido.Configurations)](https://www.nuget.org/packages/Likvido.Configurations/)
 # Likvido.Configurations
 Simple library which makes default configuration easier
 ## ConsoleAppConfiguration
