@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - src/version.props
+      - .github/workflows/nuget.yml
 
 jobs:
   build:
@@ -17,8 +18,8 @@ jobs:
       - name: Publish NuGet
         uses: brandedoutcast/publish-nuget@v2.5.5
         with:
-          PROJECT_FILE_PATH: src/Likvido.ApplicationInsights.Telemetry/Likvido.ApplicationInsights.Telemetry.csproj
-          VERSION_FILE_PATH: version.props
-          PACKAGE_NAME: Likvido.ApplicationInsights.Telemetry
+          PROJECT_FILE_PATH: src/Likvido.Configurations/Likvido.Configurations.csproj
+          VERSION_FILE_PATH: src/version.props
+          PACKAGE_NAME: Likvido.Configurations
           VERSION_REGEX: <Version>(.*)<\/Version>
           NUGET_KEY: ${{ secrets.NUGET_API_KEY }}
