@@ -2,7 +2,7 @@ name: Maintain dependabot.yml
 
 on:
   push:
-    branches: [ develop ]
+    branches: [ main ]
   repository_dispatch:
   workflow_dispatch:
 
