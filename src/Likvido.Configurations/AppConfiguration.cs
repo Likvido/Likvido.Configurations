@@ -10,6 +10,7 @@ namespace Likvido.Configurations
                 .AddJsonFile("secrets/shared.json", optional: true, reloadOnChange: true)
                 .AddJsonFile("secrets/app.json", optional: true, reloadOnChange: true)
                 .AddJsonFile("appsettings.Development.json", optional: true, reloadOnChange: true)
+                .AddJsonFile("appsettings.Production.json", optional: true, reloadOnChange: true)
                 .AddEnvironmentVariables();
             if (args != null)
             {
